@@ -14,8 +14,8 @@ Each function:
 
 The only intentional difference is the naming convention: all recreated functions use the `ft_` prefix. For example:
 
-strlen   -> ft_strlen
-
-memcpy   -> ft_memcpy
-
-atoi     -> ft_atoi
+Original Function    My Implementation
+-----------------    -----------------
+strlen()      -->    ft_strlen()
+memcpy()      -->    ft_memcpy()
+atoi()        -->    ft_atoi()

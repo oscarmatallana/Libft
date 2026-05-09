@@ -1,7 +1,7 @@
 ## 📚 About This Project
 
 Programming in C without the standard library can feel a bit like trying to build furniture without tools 🛠️.  
-The goal of this project is to better understand how some of the most fundamental C functions actually work by rebuilding them from scratch.
+The goal of this project is to better understand how some of the most fundamental C functions actually work by rebuilding them from scratch. They do not rely on any external functions.
 
 This project is part of my software engineering journey at 42 Berlin, where the focus is not only on writing code, but on understanding what happens behind the abstractions 🚀
 

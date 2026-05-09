@@ -14,6 +14,7 @@ Each function:
 
 The only intentional difference is the naming convention: all recreated functions use the `ft_` prefix. For example:
 
+```c
 Original Function    My Implementation
 -----------------    -----------------
 strlen()      -->    ft_strlen()

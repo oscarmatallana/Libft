@@ -12,8 +12,7 @@ Each function:
 - is implemented according to the official man pages
 - is written manually to deepen understanding of memory management, strings, pointers, and low-level programming concepts
 
-The only intentional difference is the naming convention: all recreated functions use the `ft_` prefix.  
-For example:
+The only intentional difference is the naming convention: all recreated functions use the `ft_` prefix. For example:
 
 strlen   -> ft_strlen
 

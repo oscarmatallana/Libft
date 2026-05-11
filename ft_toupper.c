@@ -6,7 +6,7 @@
 /*   By: omatalla <omatalla@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 16:50:27 by omatalla          #+#    #+#             */
-/*   Updated: 2026/05/11 17:14:00 by omatalla         ###   ########.fr       */
+/*   Updated: 2026/05/11 17:37:23 by omatalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ int	main(void)
     printf("ASCII %d\n", ft_toupper('d'));
     printf("%c\n", ft_toupper('d'));
 }
-//Converts a lowercase letter to uppercase
-//Returns the lowercase version or the input uppercase letter
+// Converts a lowercase letter to uppercase
+// Returns the uppercase version if applicable,
+// otherwise returns the original character unchanged

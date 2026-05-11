@@ -15,9 +15,9 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-    size_t dst_length = 0;
-    size_t src_length = 0;
-    size_t i;
+    size_t  dst_length = 0;
+    size_t  src_length = 0;
+    size_t  i;
 
     while (dst_length < size && dst[dst_length] != '\0')
         dst_length++; // find the current length of dst (up to size)
@@ -25,8 +25,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
     while (src[src_length] != '\0')
         src_length++; // length of src
 
-    if (dst_length == size)
-        return (size + src_length); // no space to append
+    if (dst_length == size) // max. safe memory boundary
+        return (size + src_length); // NEVER found '\0' in the buffer
 
     i = 0;
     while (i < size - dst_length - 1 && src[i] != '\0')
@@ -41,14 +41,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 int	main(void)
 {
-	char	src[] = "Hola";
-//	char	src2[] = "difficult";
-	char	dest[] = "Cola";
-//	char	dest2[] = "This was";
+	char	src[] = "Cola";
+	char	src2[] = "Cola";
+	char	dest[9] = "Hola";
+    char	dest2[9] = "Hola";
 
 	printf("src: %s\n", src);
-	printf("%ld\n",ft_strlcat(dest, src, 2));
-	printf("final dest: %s", dest);
-//	strlcpy(dest2, src2, 19);
-//	printf("strlcpyrealoutput: %s\n", dest2);
+    printf("dest: %s\n", dest);
+	printf("ft_strlcat-length: %zu\n", ft_strlcat(dest, src, 9));
+    printf("final dest: %s\n", dest);
+	printf("strlcat-length: %zu\n", strlcat(dest2, src2, 9));
+    printf("strlcat-final dest: %s\n", dest2);
 }
+// z is for size type (size_t)
+// u is for unsigned integer

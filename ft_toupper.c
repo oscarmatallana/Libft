@@ -6,7 +6,7 @@
 /*   By: omatalla <omatalla@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/11 16:50:27 by omatalla          #+#    #+#             */
-/*   Updated: 2026/05/11 17:09:28 by omatalla         ###   ########.fr       */
+/*   Updated: 2026/05/11 17:14:00 by omatalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,4 @@ int	main(void)
     printf("%c\n", ft_toupper('d'));
 }
 //Converts a lowercase letter to uppercase
-//Returns the lowercase version or the uppercase letter input
+//Returns the lowercase version or the input uppercase letter

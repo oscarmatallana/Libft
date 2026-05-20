@@ -27,7 +27,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ptr = malloc(memory);
 	if (ptr == NULL)
 		return (NULL);
-	memset(ptr, 0, memory);
+	ft_memset(ptr, 0, memory);
 	return (ptr);
 }
 /*
@@ -55,4 +55,4 @@ int	main(void)
 //Initializes all bytes to zero
 //Returns a pointer to the allocated memory
 //Returns NULL if allocation fails or if the multiplication overflows
-//www.geeksforgeeks.org/c/
+//Check www.geeksforgeeks.org/c/

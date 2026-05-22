@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omatalla <omatalla@student.42berlin.d      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/22 16:46:53 by omatalla          #+#    #+#             */
+/*   Updated: 2026/05/22 16:57:57 by omatalla         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 
@@ -7,7 +19,7 @@
 
 typedef struct s_list
 {
-	void	        *content;
+	void			*content;
 	struct s_list	*next;
 }			t_list;
 

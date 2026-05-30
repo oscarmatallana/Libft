@@ -1,46 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omatalla <omatalla@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/04 17:08:29 by omatalla          #+#    #+#             */
-/*   Updated: 2026/05/04 17:31:28 by omatalla         ###   ########.fr       */
+/*   Created: 2026/05/30 11:51:29 by omatalla          #+#    #+#             */
+/*   Updated: 2026/05/30 12:09:54 by omatalla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stddef.h>
-//#include <stdio.h> for printf
-//#include <string.h> for bzero
-//#include <unistd.h> for write
-
 #include "libft.h"
+//#include <stdio.h>
+//#include <string.h>
 
-void	*ft_bzero(void *s, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*ptr;
+	const unsigned char	*pstr1;
+	const unsigned char	*pstr2;
 
-	ptr = s;
-	while (n > 0)
+	pstr1 = s1;
+	pstr2 = s2;
+	while (n--)
 	{
-		*ptr = '\0';
-		ptr++;
-		n--;
+		if (*pstr1 != *pstr2)
+			return (*pstr1 - *pstr2);
+		pstr1++;
+		pstr2++;
 	}
-	return (s);
+	return (0);
 }
 /*
 int	main(void)
 {
-	char str1[] = "hello world";
-	char str2[] = "hello world";
-	
-	printf("before: %s\n", str1);
-	ft_bzero(str1, 4);
-	write(1, &str1, 11);
-	write(1, "\n", 1);
-	bzero(str2, 4);
-	write(1, &str2, 11);
-	write(1, "\n", 1);
+	char	str1[] = "Zukunftsmusik";
+	char	str2[] = "Zukunftmusik";
+
+	printf("memcmp:     %d\n", memcmp(str1, str2, 13));
+	printf("ft_memcmp:  %d\n", ft_memcmp(str1, str2, 13));
 }*/

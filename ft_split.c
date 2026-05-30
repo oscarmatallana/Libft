@@ -81,17 +81,17 @@ static char	**fill_words(char **w_a, char const *str, char sep)
 	return (w_a);
 }
 
-char	**ft_split(char const *str, char separator)
+char	**ft_split(char const *s, char c)
 {
 	char	**w_a;
 
-	if (!str)
+	if (!s)
 		return (NULL);
 	w_a = malloc(sizeof(char *)
-			* (count_words(str, separator) + 1));
+			* (count_words(s, c) + 1));
 	if (!w_a)
 		return (NULL);
-	return (fill_words(w_a, str, separator));
+	return (fill_words(w_a, s, c));
 }
 /*Notes about this version:
 count_words counts how many words exist before allocating memory

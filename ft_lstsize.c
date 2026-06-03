@@ -28,7 +28,7 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (node_counter);
 }
-/*//Goal: Move through the list node by node, using next pointers
+/* //Goal: Move through the list node by node, using next pointers
 //HEAD
 // -> [Mit]
 //  -> [dir]

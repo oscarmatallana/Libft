@@ -2,6 +2,24 @@
 
 # Libft
 
+## Table of Contents
+
+* [Libft](#libft)
+* [Description](#description)
+* [Project Goals](#project-goals)
+* [Skills Acquired](#skills-acquired)
+* [Features](#features)
+* [What is libft.a?](#what-is-libfta)
+* [Repository](#repository)
+* [Instructions](#instructions)
+* [Usage Example](#usage-example)
+* [Linked List Structure](#linked-list-structure)
+* [Library Reference](#library-reference)
+* [Testing](#testing)
+* [Resources](#resources)
+* [AI Usage](#ai-usage)
+* [Author](#author)
+
 ## Description
 
 Libft is the first project of the 42 Core Curriculum. Its objective is to recreate a subset of the standard C library functions and implement additional utility functions that will be used as building blocks throughout future projects.
